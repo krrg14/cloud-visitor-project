@@ -1,10 +1,10 @@
-const counter = document.getElementById('visitor-count');
-const storageKey = 'resume-challenge-visitor-count';
+async function getVisitorCount() {
 
-let count = Number(localStorage.getItem(storageKey) || 0);
-count += 1;
-localStorage.setItem(storageKey, count);
+    const response = await fetch("https://segata4k3h.execute-api.ap-south-1.amazonaws.com");
 
-if (counter) {
-  counter.textContent = count;
+    const data = await response.json();
+
+    document.getElementById("visitor-count").innerText = data.count;
 }
+
+getVisitorCount();

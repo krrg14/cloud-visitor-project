@@ -1,0 +1,4 @@
+.git
+s3-bucket/.terraform
+s3-bucket/terraform.tfstate
+s3-bucket/terraform.tfstate.backup
