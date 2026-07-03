@@ -58,7 +58,7 @@ resource "aws_s3_bucket_website_configuration" "web-hosting" {
 resource "aws_s3_object" "index" {
   bucket       = aws_s3_bucket.static_web_bucket.id
   key          = "index.html"
-  source       = "static-web/index.html"
-  etag         = filemd5("static-web/index.html")
+  source       = "../index.html"
+  etag         = filemd5("../index.html")
   content_type = "text/html"
 }
