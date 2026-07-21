@@ -1,3 +1,6 @@
+Currently this project is live now, 
+check out at : https://dzh12lth55m0i.cloudfront.net/
+
 # AWS Cloud-Visitor-Project
 
 ## Project Overview
